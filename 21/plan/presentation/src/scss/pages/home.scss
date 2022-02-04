@@ -14,7 +14,7 @@
 
   .sample{
     position:relative;
-    width:200px;
+    width:800px;
     height:200px;
     bottom:10%;
     background-color: white;
@@ -25,7 +25,6 @@
     font-weight: bold;
     color: gray;
     transition: 0.5s;
-    opacity: 0;
 
     &:hover{
       opacity: 1;
