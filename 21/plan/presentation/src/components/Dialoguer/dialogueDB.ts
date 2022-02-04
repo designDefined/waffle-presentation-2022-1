@@ -11,9 +11,9 @@ const slow = 200;
 export const dialogueDB: DialoguerOptionType[] = [
   {
     data: [
-      { script: "샘플텍스트입니다. ", speed: normal },
-      2000,
-      { script: "두번째 문장", speed: fast },
+      { script: ". . . ", speed: 500 },
+      1000,
+      { script: "거기 누구 있어요?", speed: fast },
     ],
     callback: () => {
       setTimeout(() => {

@@ -1,2 +1,8 @@
 @import
-  "pages/home";
+  "base/typography";
+
+@import
+  "pages/home",
+  "components/web-boy",
+  "components/dialoguer",
+  "components/path-finder";

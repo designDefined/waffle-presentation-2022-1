@@ -17,7 +17,7 @@ const Dialoguer = () => {
     });
 
   return (
-    <div>
+    <div className="dialoguer">
       <DialoguePresenter />
     </div>
   );
