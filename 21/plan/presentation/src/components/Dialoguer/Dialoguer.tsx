@@ -16,7 +16,9 @@ const Dialoguer = () => {
       option.callback();
     });
 
-  return (
+  return option.invisible === true ? (
+    <div />
+  ) : (
     <div className="dialoguer">
       <DialoguePresenter />
     </div>

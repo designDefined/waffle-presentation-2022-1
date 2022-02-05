@@ -1,0 +1,20 @@
+.path-finder{
+  position: relative;
+  width:720px;
+  height:96px;
+  margin-top: 0px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "NeoDunggeunmo", sans-serif;
+  font-size:32px;
+
+  .path-item{
+    cursor: pointer;
+    &:hover{
+      color:white;
+      background-color: rgba(0,0,0,0.5);
+    }
+  }
+}

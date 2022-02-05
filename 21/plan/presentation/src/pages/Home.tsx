@@ -1,5 +1,6 @@
 import Dialoguer from "../components/Dialoguer/Dialoguer";
 import WebBoy from "../components/WebBoy/WebBoy";
+import PathFinder from "../components/PathFinder/PathFinder";
 
 const Home = () => {
   return (
@@ -7,7 +8,10 @@ const Home = () => {
       <div className="content-wrapper">
         <div className="main">
           <WebBoy />
-          <Dialoguer />
+          <div className="dialogue-wrapper">
+            <Dialoguer />
+            <PathFinder />
+          </div>
         </div>
       </div>
     </section>

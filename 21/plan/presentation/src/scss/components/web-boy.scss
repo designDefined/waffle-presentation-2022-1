@@ -4,5 +4,61 @@
   width:400px;
   height:400px;
   background-color: white;
-  box-shadow: 0 5px 20px 2px rgba(0,0,0, 0.3);
+
+  //move
+  &.move-appear{
+    animation: 1.5s cubic-bezier(.5,1.13,.88,.33) 1s forwards appear;
+  }
+  &.move-hover{
+    animation: 3s ease 0s infinite alternate hover;
+  }
+  &.move-swing{
+    box-shadow: 0 5px 60px 10px rgba(0,0,0, 0.3);
+    animation: 3s ease 0s infinite forwards swing;
+  }
+  &.move-none{
+    box-shadow: 0 5px 60px 10px rgba(0,0,0, 0.3);
+  }
+  &.color-whtie{
+    background-color: white;
+  }
+  &.color-red{
+    background-color: rgba(255,200,200,1);
+    transition: 1s;
+  }
 }
+
+@keyframes appear {
+  from{
+    opacity:0;
+    transform: scale(0.5);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 6px 20px 2px rgba(0,0,0, 0.3);
+  }
+}
+
+@keyframes hover {
+  from {
+    transform: scale(1);
+    box-shadow: 0 5px 20px 2px rgba(0,0,0, 0.4);
+  }
+  to {
+    transform: scale(1.1);
+    box-shadow: 0 5px 60px 10px rgba(0,0,0, 0.3);
+  }
+}
+
+@keyframes swing{
+  from {
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(180deg);
+  }
+}
+
+
